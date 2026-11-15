@@ -1,6 +1,6 @@
 // Offline-first app shell, challenges saved locally on each device.
-const CACHE='after-dark-shuffle-v3';
-const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg'];
+const CACHE='lettucelove-banana-v4';
+const FILES=['./','./index.html','./manifest.webmanifest','./love-logo.webp','./love-icon-180.png','./love-icon-192.png','./love-icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
