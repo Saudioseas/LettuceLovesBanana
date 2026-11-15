@@ -1,0 +1,19 @@
+{
+  "name": "After Dark Shuffle",
+  "short_name": "After Dark",
+  "description": "Private couples challenge shuffler",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#120b18",
+  "theme_color": "#160e1c",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
